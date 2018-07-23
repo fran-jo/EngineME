@@ -1,0 +1,26 @@
+The project contains three scritps/interfaces: for OMC, Dy and JM
+This interfaces require to install OpenModelica, Dymola and JModelica. (The script for JModelica needs to be updated)
+
+To run any script you need to give three parameters, i.e.:
+	[1] ./config/simResourcesOMC.properties
+	[2] ./config/simConfigurationOMC.properties
+
+[1] stores the resources a.k.a. model files and library files to work with
+[2] stores the configuration of each modelica compilers
+
+If simulations are successful, you will be prompted to a simple command line choice (multiple choices are allowed, 
+separated by space)
+[0] B4
+[1] B5
+[2] B6
+[3] B7
+[4] B1
+[5] B2
+[6] B3
+[7] B8
+[8] B9
+Select which variable do you want to plot: 6 7 8
+Results are stored into and .h5 file (hdfviewer is required to view the file with correct format) in the specified 
+output path from simResourcesXXX.properties file)
+
+The scripts have been tested within PyDev environment from Eclipse
